@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>weatherApp</title>
+ 
+</head>
+
+<body>
+    <div id="new-wonder">
+        <input type="text" id="cityId" placeholder="City Name" />
+        <button id="searchCity">Search</button>
+    </div>
+
+    <div id="cities">
+      
+    </div>
+    
+    <script id="menu-template" type="text/x-handlebars-template">
+        
+        <div class="row">
+
+            <div>
+                <h1>{{name}}</h1> <img src={{conditionPic}}>
+                <h2>{{temperature}}&#8451</h2> <h3>{{condition}}</h3>
+            </div>
+        <button class="addCity">add favorite City</button>
+        <button class="removeCity">remove</button>
+        </div>
+        
+    
+                
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="renderer.js"></script>
+    <script src="model.js"></script>
+     <script src="controller.js"></script>
+</body>
+
+</html>
